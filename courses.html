@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course catalogue | Fernhill Studio School</title>
+  <meta name="description" content="Browse every Fernhill course. Filter by topic, level, format and price to find the right next step for your creative business.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fernhill Studio School (concept)">
+  <meta property="og:title" content="Course catalogue | Fernhill Studio School">
+  <meta property="og:description" content="Browse every Fernhill course. Filter by topic, level, format and price to find the right next step for your creative business.">
+  <meta name="theme-color" content="#2e5a41">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <p>New live cohort: <a href="course.html?course=email-marketing">Email Marketing That Sounds Like You</a> starts 12 January.</p>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="currentColor"/><path d="M11 30c1-11 8-18 19-21-1 11-8 18-19 21z" fill="#f2dfa7"/><path d="M11.5 29.5c5-6 10-11 16-16.5" fill="none" stroke="#2e5a41" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="brand-name">Fernhill <span>Studio School</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span><span>Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="courses.html" aria-current="page">Courses</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="members.html">Member area</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm header-cta" href="membership.html">Join the studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page header -->
+    <section class="page-hero ruled" aria-labelledby="page-title">
+      <img class="page-hero-leaf" src="leaf-sprig.svg" alt="" width="300" height="300">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Courses</span></li></ol></nav>
+        <p class="eyebrow">The catalogue</p>
+        <h1 id="page-title">All courses</h1>
+        <p class="lede">Self-paced courses, live cohorts and recorded workshops on the business side of making. Filter by topic, level, format or price, or search for the thing that is bugging you.</p>
+      </div>
+    </section>
+
+    <!-- Catalogue: filters (left) and results (right). On Squarespace: a Courses
+         collection or Commerce digital products shown with a filterable summary. -->
+    <section class="section-tight" aria-label="Course catalogue">
+      <div class="wrap catalogue" id="catalogue">
+        <button class="btn btn-outline filter-toggle" type="button" aria-expanded="false" aria-controls="filters">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filters</span>
+        </button>
+
+        <form id="filters" class="filters" aria-labelledby="filters-title" novalidate>
+          <div class="filters-head">
+            <h2 id="filters-title">Filter courses</h2>
+            <button class="btn btn-ghost btn-sm" type="reset">Clear all</button>
+          </div>
+          <div class="field">
+            <label for="q">Search</label>
+            <input type="search" id="q" name="q" placeholder="Try photos or tax" autocomplete="off">
+          </div>
+          <fieldset>
+            <legend>Topic</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="topic" value="money"><span>Pricing and money</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="photo"><span>Photography</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="marketing"><span>Marketing</span></label>
+              <label class="chip"><input type="checkbox" name="topic" value="systems"><span>Shop and systems</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Level</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="level" value="beginner"><span>Beginner</span></label>
+              <label class="chip"><input type="checkbox" name="level" value="intermediate"><span>Intermediate</span></label>
+              <label class="chip"><input type="checkbox" name="level" value="advanced"><span>Advanced</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Format</legend>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="format" value="self-paced"><span>Self-paced</span></label>
+              <label class="chip"><input type="checkbox" name="format" value="live-cohort"><span>Live cohort</span></label>
+              <label class="chip"><input type="checkbox" name="format" value="workshop"><span>Workshop</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Price</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="price" value="any" checked><span>Any price</span></label>
+              <label class="chip"><input type="radio" name="price" value="free"><span>Free</span></label>
+              <label class="chip"><input type="radio" name="price" value="under100"><span>Under $100</span></label>
+              <label class="chip"><input type="radio" name="price" value="100to199"><span>$100 to $199</span></label>
+              <label class="chip"><input type="radio" name="price" value="200plus"><span>$200 and up</span></label>
+            </div>
+          </fieldset>
+          <p class="small muted" style="margin:0">Members: self-paced courses are included in Library, workshops in Studio.</p>
+        </form>
+
+        <div class="results">
+          <div class="results-bar">
+            <p class="results-count" id="result-count" aria-live="polite">Showing <b>10</b> of 10 courses</p>
+            <div class="sort">
+              <label for="sort">Sort by</label>
+              <select id="sort" name="sort" form="filters">
+                <option value="recommended">Recommended</option>
+                <option value="price-asc">Price, low to high</option>
+                <option value="price-desc">Price, high to low</option>
+                <option value="shortest">Shortest first</option>
+              </select>
+            </div>
+          </div>
+          <h2 class="visually-hidden">Courses</h2>
+          <div class="course-grid" id="course-grid">
+          <article class="course-card" data-topic="money" data-level="beginner" data-format="self-paced" data-price="89" data-order="1" data-minutes="160" data-keywords="costs markup margin hourly rate wholesale retail price list">
+            <div class="course-cover cover-sage"><img src="cover-money.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Pricing and money</p>
+              <h3><a href="course.html?course=pricing-your-work">Pricing Your Work With Confidence</a></h3>
+              <p class="course-summary">Find your true costs, set prices you can defend and stop discounting by default.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Beginner</li><li>16 lessons</li><li>2 h 40 min</li></ul>
+              <p class="course-price">$89<span>Included in Library</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="photo" data-level="beginner" data-format="self-paced" data-price="69" data-order="2" data-minutes="111" data-keywords="photos phone camera light listing pictures">
+            <div class="course-cover cover-plum"><img src="cover-photo.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Photography</p>
+              <h3><a href="course.html?course=product-photography-basics">Product Photography Basics</a></h3>
+              <p class="course-summary">Clean, consistent product photos with a phone, a window and a sheet of foam board.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Beginner</li><li>12 lessons</li><li>1 h 51 min</li></ul>
+              <p class="course-price">$69<span>Included in Library</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="marketing" data-level="beginner" data-format="live-cohort" data-price="149" data-order="3" data-minutes="342" data-keywords="newsletter email list subscribers launch">
+            <div class="course-cover cover-butter"><img src="cover-marketing.svg" alt="" width="500" height="300"><span class="cover-format">Live cohort</span></div>
+            <div class="course-body">
+              <p class="course-topic">Marketing</p>
+              <h3><a href="course.html?course=email-marketing">Email Marketing That Sounds Like You</a></h3>
+              <p class="course-summary">A four-week live cohort: set up a simple newsletter and write emails people are glad to open.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Beginner</li><li>12 lessons</li><li>5 h 42 min</li></ul>
+              <p class="course-price">$149<span>Studio members save 20%</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="money" data-level="beginner" data-format="self-paced" data-price="0" data-order="4" data-minutes="34" data-keywords="free beginner costs markup price list new maker">
+            <div class="course-cover cover-cream"><img src="cover-money.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Pricing and money</p>
+              <h3><a href="course.html?course=start-here-price-list">Start Here: Your First Price List</a></h3>
+              <p class="course-summary">A free mini course: list every product, add up real costs and leave with a first draft price list.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Beginner</li><li>5 lessons</li><li>34 min</li></ul>
+              <p class="course-price">Free<span>Free for everyone</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="money" data-level="beginner" data-format="self-paced" data-price="79" data-order="5" data-minutes="121" data-keywords="tax receipts accountant expenses profit spreadsheet">
+            <div class="course-cover cover-plum"><img src="cover-money.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Pricing and money</p>
+              <h3><a href="course.html?course=bookkeeping-for-makers">Bookkeeping for Makers</a></h3>
+              <p class="course-summary">A one-hour monthly routine for receipts, sales and the numbers your accountant asks for.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Beginner</li><li>12 lessons</li><li>2 h 1 min</li></ul>
+              <p class="course-price">$79<span>Included in Library</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="marketing" data-level="intermediate" data-format="self-paced" data-price="99" data-order="6" data-minutes="120" data-keywords="social media instagram posts captions content calendar">
+            <div class="course-cover cover-sage"><img src="cover-marketing.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Marketing</p>
+              <h3><a href="course.html?course=calm-content-plan">A Calm Content Plan</a></h3>
+              <p class="course-summary">Plan a month of posts and emails in one afternoon, built around what you are already making.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Intermediate</li><li>12 lessons</li><li>2 h</li></ul>
+              <p class="course-price">$99<span>Included in Library</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="photo" data-level="intermediate" data-format="workshop" data-price="45" data-order="7" data-minutes="97" data-keywords="props styling photos jewelry candles ceramics prints">
+            <div class="course-cover cover-cream"><img src="cover-photo.svg" alt="" width="500" height="300"><span class="cover-format">Workshop</span></div>
+            <div class="course-body">
+              <p class="course-topic">Photography</p>
+              <h3><a href="course.html?course=styling-and-light">Styling and Light for Small Products</a></h3>
+              <p class="course-summary">A recorded workshop on props, layering and light for jewelry, candles, ceramics and prints.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Intermediate</li><li>5 lessons</li><li>1 h 37 min</li></ul>
+              <p class="course-price">$45<span>Included in Studio</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="systems" data-level="intermediate" data-format="self-paced" data-price="119" data-order="8" data-minutes="120" data-keywords="orders shipping stock inventory admin customer service policies">
+            <div class="course-cover cover-butter"><img src="cover-systems.svg" alt="" width="500" height="300"><span class="cover-format">Self-paced</span></div>
+            <div class="course-body">
+              <p class="course-topic">Shop and systems</p>
+              <h3><a href="course.html?course=shop-systems">Shop Systems That Run Themselves</a></h3>
+              <p class="course-summary">Simple systems for orders, stock, shipping and customer emails, so your shop runs without you hovering.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Intermediate</li><li>12 lessons</li><li>2 h</li></ul>
+              <p class="course-price">$119<span>Included in Library</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="systems" data-level="advanced" data-format="live-cohort" data-price="229" data-order="9" data-minutes="397" data-keywords="wholesale stockists shops galleries line sheet pitch trade">
+            <div class="course-cover cover-sage"><img src="cover-systems.svg" alt="" width="500" height="300"><span class="cover-format">Live cohort</span></div>
+            <div class="course-body">
+              <p class="course-topic">Shop and systems</p>
+              <h3><a href="course.html?course=wholesale-ready">Getting Wholesale Ready</a></h3>
+              <p class="course-summary">A six-week live cohort to prepare line sheets, terms and a pitch before you approach shops.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Advanced</li><li>12 lessons</li><li>6 h 37 min</li></ul>
+              <p class="course-price">$229<span>Studio members save 20%</span></p>
+            </div>
+          </article>
+          <article class="course-card" data-topic="money" data-level="advanced" data-format="workshop" data-price="59" data-order="10" data-minutes="125" data-keywords="price rise increase customers stockists announcement">
+            <div class="course-cover cover-plum"><img src="cover-money.svg" alt="" width="500" height="300"><span class="cover-format">Workshop</span></div>
+            <div class="course-body">
+              <p class="course-topic">Pricing and money</p>
+              <h3><a href="course.html?course=raising-prices">Raising Prices Without Losing Your People</a></h3>
+              <p class="course-summary">A recorded two-part workshop on planning, testing and announcing a price rise.</p>
+              <ul class="course-meta" aria-label="Course details"><li>Advanced</li><li>6 lessons</li><li>2 h 5 min</li></ul>
+              <p class="course-price">$59<span>Included in Studio</span></p>
+            </div>
+          </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M14 54C18 34 30 20 50 12c-2 22-16 36-36 42z"/><path d="M14 54c10-12 20-22 30-32"/></svg>
+            <h2 class="h3" style="font-size:1.3rem">No courses match those filters</h2>
+            <p class="muted">Try removing a filter or searching for a broader word, like pricing or photos.</p>
+            <button class="btn btn-primary btn-sm" type="button" data-clear-filters>Clear all filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free course banner -->
+    <section class="section-tight" aria-labelledby="starter-title">
+      <div class="wrap">
+        <div class="starter-banner">
+          <div>
+            <h2 id="starter-title" style="font-size:1.4rem;margin-bottom:6px">Not sure where to begin?</h2>
+            <p>Start Here: Your First Price List is free, takes about half an hour and ends with a price list you can test this month.</p>
+          </div>
+          <a class="btn btn-plum" href="course.html?course=start-here-price-list">Start the free course</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formats explained -->
+    <section class="section section-paper" aria-labelledby="formats-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Three ways to learn</p>
+          <h2 id="formats-title">What the formats mean</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card"><span class="pill">Self-paced</span><h3 style="margin-top:12px">Learn on your schedule</h3><p class="muted" style="margin:0">Short video lessons and worksheets you can start the moment you enroll. Included in every membership.</p></div>
+          <div class="card"><span class="pill pill-plum">Live cohort</span><h3 style="margin-top:12px">Learn with a small group</h3><p class="muted" style="margin:0">Weekly live calls over four to six weeks, capped at 24 makers, with replays for 12 months.</p></div>
+          <div class="card"><span class="pill pill-butter">Workshop</span><h3 style="margin-top:12px">One deep dive</h3><p class="muted" style="margin:0">A recorded live session on one focused topic, with the Q&amp;A and a worksheet. Included in Studio.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="currentColor"/><path d="M11 30c1-11 8-18 19-21-1 11-8 18-19 21z" fill="#f2dfa7"/><path d="M11.5 29.5c5-6 10-11 16-16.5" fill="none" stroke="#2e5a41" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="brand-name">Fernhill <span>Studio School</span></span>
+        </a>
+        <p>Practical business classes for people who make things. Taught online, written in plain language, built around worksheets you will actually use.</p>
+        <ul class="social">
+          <li><a href="#" aria-label="Fernhill on Instagram (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="Fernhill on Pinterest (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M10.5 21l2-8.5M9.5 10.5a3 3 0 1 1 5.6 1.6c-.7 1.3-2.2 2-3.4 1.4"/></svg></a></li>
+          <li><a href="#" aria-label="Fernhill on YouTube (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-heading">School</h2>
+        <ul>
+          <li><a href="courses.html">All courses</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="coaching.html">1:1 coaching</a></li>
+          <li><a href="members.html">Member sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-heading">Say hello</h2>
+        <p>hello@fernhill.example<br>+1 (555) 0100<br>Online, from a small studio in the Pacific Northwest</p>
+        <p class="small" style="margin-top:12px">Office hours: Monday to Thursday, 9 am to 4 pm Pacific</p>
+      </div>
+      <div class="newsletter">
+        <h2>The Fernhill Notebook</h2>
+        <p>One useful email every other Tuesday: a pricing tip, a photo fix or a worksheet. No hype, easy to leave.</p>
+        <form class="newsletter-form" data-demo-form="#nl-done" novalidate>
+          <div class="field">
+            <label for="nl-email">Email address</label>
+            <div class="inline-form">
+              <input type="email" id="nl-email" name="email" autocomplete="email" required aria-describedby="nl-email-error" data-error="Enter an email address like name@example.com." placeholder="you@yourstudio.com">
+              <button class="btn" type="submit">Subscribe</button>
+            </div>
+            <p class="error-msg" id="nl-email-error" aria-live="polite"></p>
+          </div>
+        </form>
+        <div class="success-panel" id="nl-done" tabindex="-1" hidden>
+          <h3>You are on the list (demo)</h3>
+          <p>This is a concept site, so nothing was sent and no address was stored. On the live site this would be a Squarespace Newsletter block connected to Email Campaigns.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="disclosure">Concept site by Emmanuel O. for portfolio purposes. Fernhill Studio School is a fictional business. Front-end prototype of a Squarespace 7.1 layout; forms and bookings are demos and send no data.</p>
+      <p>&copy; 2026 Fernhill Studio School (fictional). No cookies, no tracking, no analytics.</p>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Member area | Fernhill Studio School</title>
+  <meta name="description" content="Sign in to the Fernhill member area to pick up your courses, tick off lessons and see upcoming live sessions.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fernhill Studio School (concept)">
+  <meta property="og:title" content="Member area | Fernhill Studio School">
+  <meta property="og:description" content="Sign in to the Fernhill member area to pick up your courses, tick off lessons and see upcoming live sessions.">
+  <meta name="theme-color" content="#2e5a41">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <p>New live cohort: <a href="course.html?course=email-marketing">Email Marketing That Sounds Like You</a> starts 12 January.</p>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="currentColor"/><path d="M11 30c1-11 8-18 19-21-1 11-8 18-19 21z" fill="#f2dfa7"/><path d="M11.5 29.5c5-6 10-11 16-16.5" fill="none" stroke="#2e5a41" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="brand-name">Fernhill <span>Studio School</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span><span>Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="members.html" aria-current="page">Member area</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm header-cta" href="membership.html">Join the studio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page header -->
+    <section class="page-hero ruled" aria-labelledby="page-title">
+      <img class="page-hero-leaf" src="leaf-sprig.svg" alt="" width="300" height="300">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Member area</span></li></ol></nav>
+        <p class="eyebrow">Member area</p>
+        <h1 id="page-title">Your studio notebook</h1>
+        <p class="lede">Pick up your courses, tick off lessons and see what is coming up. This page is a working demo of a members-only area: the sign-in check and your ticks stay in this browser.</p>
+      </div>
+    </section>
+
+    <!-- On Squarespace: a Member Area (gated pages, member accounts and pricing
+         plans). Here the sign-in is checked in the browser against a demo account. -->
+    <section class="section-tight" aria-label="Member area demo">
+      <div class="wrap">
+        <div id="login-panel" class="login-grid">
+          <div class="card login-card">
+            <h2 id="login-title">Sign in</h2>
+            <div class="demo-note" style="margin-bottom:22px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+              <div>
+                <p><strong>Demo account.</strong> Use these details to look around. The check happens in your browser and nothing is sent anywhere.</p>
+                <p class="demo-creds"><span>Email: <code>member@fernhill.example</code></span><span>Password: <code>demo1234</code></span></p>
+                <button class="btn btn-outline btn-sm" type="button" id="fill-demo">Fill in the demo details</button>
+              </div>
+            </div>
+            <form id="login-form" aria-labelledby="login-title" novalidate>
+              <div class="field">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" autocomplete="username" required aria-describedby="login-email-error" data-error="Enter the demo email address, member@fernhill.example.">
+                <p class="error-msg" id="login-email-error"></p>
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" autocomplete="current-password" required aria-describedby="login-password-error" data-error="Enter the demo password, demo1234.">
+                <p class="error-msg" id="login-password-error"></p>
+              </div>
+              <p class="error-msg" id="login-error" role="alert" style="margin-bottom:14px"></p>
+              <button class="btn btn-primary btn-block" type="submit">Sign in to the demo</button>
+              <p class="small muted" style="margin:14px 0 0">Forgot your password? On the live site, Squarespace emails a reset link.</p>
+            </form>
+          </div>
+          <div class="login-side section-plum">
+            <h2 style="font-size:1.4rem">Inside the member area</h2>
+            <ul class="checklist">
+              <li>Every course you own, with your progress saved</li>
+              <li>Live call schedule, links and replays</li>
+              <li>Worksheets and calculators in one place</li>
+              <li>Your plan, receipts and account settings</li>
+            </ul>
+            <img src="leaf-sprig.svg" alt="" width="300" height="300" style="width:160px;margin:24px 0 0 auto">
+          </div>
+        </div>
+
+        <!-- Dashboard (shown after the demo sign-in) -->
+        <div id="dashboard" hidden>
+          <div class="dash-head">
+            <div>
+              <p class="eyebrow">Studio membership (demo account)</p>
+              <h2 id="dash-title" tabindex="-1">Welcome back, Robin</h2>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-ghost btn-sm" type="button" id="reset-progress">Reset my progress</button>
+              <button class="btn btn-outline btn-sm" type="button" id="sign-out">Sign out</button>
+            </div>
+          </div>
+          <p class="notice" id="storage-note" hidden>Your browser is blocking local storage, so your ticks will reset when you leave this page.</p>
+
+          <div class="dash-stats">
+            <div class="card stat">
+              <p class="stat-label">Overall progress</p>
+              <p class="stat-value" id="overall-pct">0% of lessons done</p>
+              <div class="bar" id="overall-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Overall progress"><span></span></div>
+            </div>
+            <div class="card stat">
+              <p class="stat-label">Next live Q&amp;A</p>
+              <p class="stat-value">Thursday, 6 pm Pacific</p>
+              <p class="small muted" style="margin:6px 0 0">Topic: wholesale pricing questions</p>
+            </div>
+            <div class="card stat">
+              <p class="stat-label">Your plan</p>
+              <p class="stat-value">Studio, billed monthly</p>
+              <p class="small muted" style="margin:6px 0 0">Demo account, no real billing</p>
+            </div>
+          </div>
+
+          <div class="dash-grid">
+            <div>
+              <h3 class="dash-sub">Your courses</h3>
+              <div class="enrolled-list">
+                <article class="card enrolled" aria-labelledby="en-pricing">
+                  <div class="enrolled-top">
+                    <div class="course-cover cover-sage"><img src="cover-money.svg" alt="" width="500" height="300"></div>
+                    <div><h4 id="en-pricing">Pricing Your Work With Confidence</h4><p data-next>Next up</p></div>
+                  </div>
+                  <div class="enrolled-progress">
+                    <div class="progress-text"><span data-count>0 lessons</span><b data-pct>0%</b></div>
+                    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Pricing Your Work With Confidence progress"><span></span></div>
+                  </div>
+                  <details open>
+                    <summary>Lessons (tick them off as you go)</summary>
+                    <ul class="lesson-checks">
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-01" checked><span>What a price is actually made of</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-02" checked><span>Materials, packaging and the costs you forget</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-03" checked><span>Timing yourself honestly</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-04" checked><span>Worksheet walkthrough: the cost sheet</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-05" checked><span>Choosing an hourly rate</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-06" checked><span>Overheads in plain language</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-07"><span>Find your true hourly rate</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-08"><span>When batching changes the math</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-09"><span>Markups versus margins</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-10"><span>Building a wholesale price that works</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-11"><span>Pricing for markets and fairs</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-12"><span>Bundles, sets and gift options</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-13"><span>Talking about price without apologizing</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-14"><span>Handling discount requests</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-15"><span>Planning your next price rise</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="pyw-16"><span>Announcing new prices to customers</span></label></li>
+                    </ul>
+                  </details>
+                </article>
+
+                <article class="card enrolled" aria-labelledby="en-photo">
+                  <div class="enrolled-top">
+                    <div class="course-cover cover-plum"><img src="cover-photo.svg" alt="" width="500" height="300"></div>
+                    <div><h4 id="en-photo">Product Photography Basics</h4><p data-next>Next up</p></div>
+                  </div>
+                  <div class="enrolled-progress">
+                    <div class="progress-text"><span data-count>0 lessons</span><b data-pct>0%</b></div>
+                    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Product Photography Basics progress"><span></span></div>
+                  </div>
+                  <details>
+                    <summary>Lessons (tick them off as you go)</summary>
+                    <ul class="lesson-checks">
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-01" checked><span>Why light matters more than your camera</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-02" checked><span>Finding your best window</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-03" checked><span>Bouncing and softening light</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-04" checked><span>The under $40 kit list</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-05"><span>Backdrops, surfaces and a sweep</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-06"><span>Steadying your phone</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-07"><span>Hero shot, angles and scale</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-08"><span>Detail and texture close ups</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-09"><span>Shots that show size and use</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-10"><span>Phone editing in five moves</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-11"><span>Matching color across a batch</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="ppb-12"><span>Saving a style you can repeat</span></label></li>
+                    </ul>
+                  </details>
+                </article>
+
+                <article class="card enrolled" aria-labelledby="en-start">
+                  <div class="enrolled-top">
+                    <div class="course-cover cover-cream"><img src="cover-money.svg" alt="" width="500" height="300"></div>
+                    <div><h4 id="en-start">Start Here: Your First Price List</h4><p data-next>Next up</p></div>
+                  </div>
+                  <div class="enrolled-progress">
+                    <div class="progress-text"><span data-count>0 lessons</span><b data-pct>0%</b></div>
+                    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Start Here: Your First Price List progress"><span></span></div>
+                  </div>
+                  <details>
+                    <summary>Lessons (tick them off as you go)</summary>
+                    <ul class="lesson-checks">
+                      <li><label class="check"><input type="checkbox" data-lesson="shp-01" checked><span>Welcome and how to use the worksheet</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="shp-02" checked><span>Listing every product and variation</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="shp-03" checked><span>Adding up materials per piece</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="shp-04" checked><span>A simple starting markup</span></label></li>
+                      <li><label class="check"><input type="checkbox" data-lesson="shp-05" checked><span>Testing your list at a market or online</span></label></li>
+                    </ul>
+                  </details>
+                </article>
+              </div>
+            </div>
+
+            <div class="dash-side">
+              <div class="card">
+                <h3 style="font-size:1.15rem">Coming up</h3>
+                <ul class="side-list">
+                  <li><b>Live Q&amp;A: wholesale pricing</b><span class="small muted">Thursday, 6 pm Pacific, 60 minutes</span><button class="btn btn-outline btn-sm" type="button" data-demo-note="Demo only: on the live site this would add the call to your calendar.">Add to calendar</button></li>
+                  <li><b>Email Marketing cohort</b><span class="small muted">Starts 12 January, Studio members save 20%</span><a class="btn btn-ghost btn-sm" href="course.html?course=email-marketing">View the course</a></li>
+                  <li><b>Need a second pair of eyes?</b><span class="small muted">Pricing Review or Shop and Brand Audit</span><a class="btn btn-ghost btn-sm" href="coaching.html">Book coaching</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3 style="font-size:1.15rem">Downloads</h3>
+                <ul class="side-list">
+                  <li><b>Cost sheet worksheet</b><span class="small muted">PDF, 2 pages</span><button class="btn btn-outline btn-sm" type="button" data-demo-note="Demo only: downloads are not included in this concept.">Download</button></li>
+                  <li><b>Hourly rate calculator</b><span class="small muted">Spreadsheet</span><button class="btn btn-outline btn-sm" type="button" data-demo-note="Demo only: downloads are not included in this concept.">Download</button></li>
+                  <li><b>Five-shot photo checklist</b><span class="small muted">PDF, 1 page</span><button class="btn btn-outline btn-sm" type="button" data-demo-note="Demo only: downloads are not included in this concept.">Download</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="currentColor"/><path d="M11 30c1-11 8-18 19-21-1 11-8 18-19 21z" fill="#f2dfa7"/><path d="M11.5 29.5c5-6 10-11 16-16.5" fill="none" stroke="#2e5a41" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="brand-name">Fernhill <span>Studio School</span></span>
+        </a>
+        <p>Practical business classes for people who make things. Taught online, written in plain language, built around worksheets you will actually use.</p>
+        <ul class="social">
+          <li><a href="#" aria-label="Fernhill on Instagram (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="Fernhill on Pinterest (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M10.5 21l2-8.5M9.5 10.5a3 3 0 1 1 5.6 1.6c-.7 1.3-2.2 2-3.4 1.4"/></svg></a></li>
+          <li><a href="#" aria-label="Fernhill on YouTube (placeholder link)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-heading">School</h2>
+        <ul>
+          <li><a href="courses.html">All courses</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="coaching.html">1:1 coaching</a></li>
+          <li><a href="members.html">Member sign in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-heading">Say hello</h2>
+        <p>hello@fernhill.example<br>+1 (555) 0100<br>Online, from a small studio in the Pacific Northwest</p>
+        <p class="small" style="margin-top:12px">Office hours: Monday to Thursday, 9 am to 4 pm Pacific</p>
+      </div>
+      <div class="newsletter">
+        <h2>The Fernhill Notebook</h2>
+        <p>One useful email every other Tuesday: a pricing tip, a photo fix or a worksheet. No hype, easy to leave.</p>
+        <form class="newsletter-form" data-demo-form="#nl-done" novalidate>
+          <div class="field">
+            <label for="nl-email">Email address</label>
+            <div class="inline-form">
+              <input type="email" id="nl-email" name="email" autocomplete="email" required aria-describedby="nl-email-error" data-error="Enter an email address like name@example.com." placeholder="you@yourstudio.com">
+              <button class="btn" type="submit">Subscribe</button>
+            </div>
+            <p class="error-msg" id="nl-email-error" aria-live="polite"></p>
+          </div>
+        </form>
+        <div class="success-panel" id="nl-done" tabindex="-1" hidden>
+          <h3>You are on the list (demo)</h3>
+          <p>This is a concept site, so nothing was sent and no address was stored. On the live site this would be a Squarespace Newsletter block connected to Email Campaigns.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="disclosure">Concept site by Emmanuel O. for portfolio purposes. Fernhill Studio School is a fictional business. Front-end prototype of a Squarespace 7.1 layout; forms and bookings are demos and send no data.</p>
+      <p>&copy; 2026 Fernhill Studio School (fictional). No cookies, no tracking, no analytics.</p>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

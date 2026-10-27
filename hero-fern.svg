@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 420">
+  <defs><path id="lf" d="M0 0C10-9 30-11 50 0 30 11 10 9 0 0z"/></defs>
+  <path d="M110 412C104 320 103 222 111 132c4-48 10-82 17-112" fill="none" stroke="#1d3a2b" stroke-width="3.2" stroke-linecap="round"/>
+  <g fill="#3b6b4f">
+    <use href="#lf" transform="translate(108 384) rotate(-28) scale(1.55)"/>
+    <use href="#lf" transform="translate(106 344) rotate(-30) scale(1.5)"/>
+    <use href="#lf" transform="translate(105 304) rotate(-32) scale(1.42)"/>
+    <use href="#lf" transform="translate(105 264) rotate(-34) scale(1.32)"/>
+    <use href="#lf" transform="translate(106 224) rotate(-36) scale(1.2)"/>
+    <use href="#lf" transform="translate(108 184) rotate(-38) scale(1.05)"/>
+    <use href="#lf" transform="translate(111 146) rotate(-42) scale(.9)"/>
+    <use href="#lf" transform="translate(115 108) rotate(-46) scale(.74)"/>
+    <use href="#lf" transform="translate(120 74) rotate(-52) scale(.58)"/>
+    <use href="#lf" transform="translate(125 46) rotate(-58) scale(.42)"/>
+  </g>
+  <g fill="#2e5a41">
+    <use href="#lf" transform="translate(108 380) rotate(-152) scale(1.5)"/>
+    <use href="#lf" transform="translate(106 340) rotate(-150) scale(1.46)"/>
+    <use href="#lf" transform="translate(105 300) rotate(-148) scale(1.38)"/>
+    <use href="#lf" transform="translate(105 260) rotate(-146) scale(1.28)"/>
+    <use href="#lf" transform="translate(106 220) rotate(-144) scale(1.16)"/>
+    <use href="#lf" transform="translate(108 180) rotate(-142) scale(1.02)"/>
+    <use href="#lf" transform="translate(111 142) rotate(-138) scale(.86)"/>
+    <use href="#lf" transform="translate(115 104) rotate(-134) scale(.7)"/>
+    <use href="#lf" transform="translate(120 70) rotate(-128) scale(.54)"/>
+    <use href="#lf" transform="translate(125 42) rotate(-120) scale(.4)"/>
+  </g>
+  <ellipse cx="129" cy="20" rx="5" ry="9" transform="rotate(20 129 20)" fill="#4f7d5e"/>
+</svg>
